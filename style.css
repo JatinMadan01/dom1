@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    /* background-image: url(https://wallpapercave.com/wp/wp3980262.jpg); */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+.navbar{
+    /* z-index: 100;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white; */
+
+}
+.nav_container{
+    width: 80%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 2rem;
+}
+#navbar_list1{
+    height: 1.5rem;
+}
+#navbar_list2{
+    height: 1.5rem;
+}
+#navbar_list3{
+    height: 1.5rem;
+}
+#navbar_list4{
+    height: 1.5rem;
+}
+#navbar_list5{
+    height: 1.5rem;
+}
+#navbar_list6{
+    height: 1.5rem;
+}
+@media only screen and(max-width:600px){
+    .navbar{
+        text-align: center;
+    }
+    .nav_container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .nav_container div{
+        margin-bottom: 10px;
+    }
+}
+/* .container{
+    padding: 20px;
+    text-align: right;
+    color: aliceblue;
+} */
+.container1{
+    position: absolute;
+    top: 50%;
+    
+}
+.animation{
+    color: pink;
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    animation: rotateAnimation 2s ease-in-out infinite;
+}
+@keyframes rotateAnimation {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
